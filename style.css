@@ -254,10 +254,10 @@ nav ul li a:hover::after {
 
 .project-card {
   position: relative;
-  width: 75px;
-  height: 50px;
+  width: 150px;
+  height: 100px;
 
-  background-size: contain;   
+  background-size: 70%;   
   background-repeat: no-repeat;
   background-position: center;
 
