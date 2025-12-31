@@ -254,8 +254,8 @@ nav ul li a:hover::after {
 
 .project-card {
   position: relative;
-  width: 150px;
-  height: 100px;
+  width: 75px;
+  height: 50px;
 
   background-size: contain;   
   background-repeat: no-repeat;
