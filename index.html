@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Mafasa Portfolio Website</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="images/favicon.png" type="image/png">
+  <script src="https://kit.fontawesome.com/7d4376b35a.js" crossorigin="anonymous"></script>
+  <meta name="description" content="Fathima Mafasa's Portfolio - Web Developer, IT Undergraduate">
+  <meta property="og:title" content="Fathima Mafasa Portfolio">
+  <meta property="og:image" content="images/mafasa.png">
+</head>
+<body>
+  <nav><br>
+    <img src="images/logo.png" class="logo" alt="Logo" />
+    <ul id="sidemenu">
+      <li><a href="#header" class="active">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#certifications">Certification</a></li>
+      <li><a href="#contact-container">Contact</a></li>
+      <i class="fa-solid fa-circle-xmark close-icon" onclick="closemenu()"></i>
+    </ul>
+    <i class="fa-solid fa-bars menu-icon" onclick="openmenu()"></i>
+    <i class="fa-solid fa-moon" id="theme-toggle" title="Toggle Dark/Light Mode" style="cursor:pointer;font-size:1.2rem;margin-left:1rem;"></i>
+  </nav>
+
+  <!-- Home Section -->
+  <div id="header">
+    <div class="container">
+      <div class="header-text">
+        <h2>Hi I'm <span>Fathima Mafasa</span>.</h2>
+          <h4>Front-End Developer | IT Undergraduate | Aspiring Innovator</h4>
+          <h3>build real-world solutions with clean, user-friendly interfaces.</h3>
+      </div>
+    </div>
+  </div>
+
+  <!-- About Section -->
+  <section id="about">
+    <div class="container">
+      <div class="row">
+        <div class="about-col-1">
+          <img src="images/about.jpeg" alt="About Mafasa">
+        </div>
+        <div class="about-col-2">
+          <h1 class="sub-title">About Me</h1>
+          <p>I am a BSc (Hons) IT undergraduate passionate about Front-End Development, Web Design, and DevOps.
+             Skilled in HTML, CSS, JavaScript, React.js, I build responsive, user-friendly, and high-performance web applications.
+             <br>Experienced in ML app deployment, API integration, and interactive web projects, I aim to contribute to innovative digital solutions while continuously enhancing my tech skills and problem-solving abilities.</p>
+          <div class="tab-titles">
+            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+            <p class="tab-links" onclick="opentab('education')">Education</p>
+          </div>
+          <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li><span>Front-End Development</span><br>HTML5, CSS3, JavaScript, React.js, Bootstrap, Tailwind CSS</li>
+                <li><span>UI/UX Design</span><br>Responsive web design, cross-browser compatibility, performance optimization</li>
+                <li><span>Tools & Platforms</span><br>VS Code, Chrome DevTools, Git & GitHub</li>
+                <li><span>Data & ML</span><br>Python, FastAPI, Streamlit, Pandas, Scikit-learn</li>
+                <li><span>Design & Multimedia</span><br>Canva, Figma, Photoshop, CapCut</li>
+              </ul>
+           </div> 
+           <div class="tab-contents" id="experience">
+              <ul>
+                <li><span>Rotaract Club – Director of Public Relations</span><br>Aug 2025 – Present: Managed social media content, coordinated campaigns, improved digital visibility.</li>
+                <li><span>Chess Club – Editor</span><br>2024 – 2025: Created and edited content for communications and updates.</li>
+                <li><span>Leo Club & Chess Club Membership</span><br>2023 – 2024: Participated in team activities and skill-building programs.</li>
+                <li><span>Content Creation & Teaching Support</span><br>Created motivational content on YouTube, Instagram; supported peers in learning IT concepts.</li>
+              </ul>
+            </div> 
+            <div class="tab-contents" id="education">
+              <ul>
+                <li><span>BSc (Hons) IT-(2022-2026)</span><br>(3rd Year Undergraduate) Horizon Campus, Sri Lanka</li>
+                <li><span>G.C.E. Advanced Level(2020)</span><br>Arts Stream, Results: B, C, S </li>
+                <li><span>G.C.E. Ordinary Level (2017)</span><br>Results: 1A, 2B, 4C, 2S </li>
+              </ul>
+            </div> 
+        </div>
+      </div>
+     </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects">
+    <div class="container">
+      <h2 class="section-title">My Projects</h2>
+      <div class="project-grid">
+        <div class="project-card" style="background-image: url('images/VitaFeast.png')">
+          <div class="card-overlay">
+            <h3>Vita Feast</h3>
+            <p>Nutrition-Focused Meal Planner. Developed a web-based app to help users plan healthy meals with balanced nutrition.
+               Focused on user-friendly design using HTML, CSS, JavaScript, and integrated a CI/CD pipeline for streamlined deployment</p>
+            <a href="https://github.com/MafasaZ/Vita-Feast"><i class="fa-solid fa-up-right-from-square"></i></a>
+          </div>
+        </div>
+        <div class="project-card" style="background-image: url('images/Mealshare.png')">
+          <div class="card-overlay">
+            <h3>MealShare</h3>
+            <p>Food Delivery App (Group Project). Worked as part of a 5-member team to develop an Android-based food delivery app.
+               Focused on user-friendly design, meal browsing, and order management with database integration for smooth functionality</p>
+            <a href="https://github.com/AKARISHAN/MealShare"><i class="fa-solid fa-up-right-from-square"></i></a>
+          </div>
+        </div>
+        <div class="project-card" style="background-image: url('images/FastAPI.png')">
+          <div class="card-overlay">
+            <h3>FastAPI ML Deployment</h3>
+            <p>Built and deployed a machine learning model using FastAPI, enabling real-time predictions through a REST API. Focused on model integration, backend development, and deployment.</p>
+            <a href="https://github.com/MafasaZ/FastAPI-ML-Deployment"><i class="fa-solid fa-up-right-from-square"></i></a>
+          </div>
+        </div>
+        <div class="project-card" style="background-image: url('images/Streamlit.png')">
+          <div class="card-overlay">
+            <h3>Streamlit ML App</h3>
+            <p>Developed an interactive Streamlit web app for EDA, visualization, and model prediction. Showcased data analysis, UI design, and ML workflow.</p>
+            <a href="https://github.com/MafasaZ/Streamlit"><i class="fa-solid fa-up-right-from-square"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Certifications Section -->
+  <section id="certifications">
+    <div class="container">
+      <h1 class="sub-title">My Certifications</h1>
+      <div class="certifications-list">
+        <div class="certification-card">
+          <img src="images/Pandas.png" alt="Pandas Course">
+          <button onclick="toggleDescription(this)">View</button>
+          <div class="layer">
+            <h3>Pandas Course - Kaggle</h3>
+            <p>Completed Kaggle's hands-on course on Pandas, gaining practical skills in data analysis, data cleaning, and working with real datasets using Python.</p>
+          </div>
+        </div>
+        <div class="certification-card">
+          <img src="images/Data Cleaning.png" alt="Data Cleaning Course">
+          <button onclick="toggleDescription(this)">View</button>
+          <div class="layer">
+            <h3>Data Cleaning - Kaggle</h3>
+            <p>Completed the Data Cleaning course on Kaggle, learning techniques to handle missing data, correct data types, and clean messy datasets using Python.</p>
+          </div>
+        </div>
+        <div class="certification-card">
+          <img src="images/ML.png" alt="ML Course">
+          <button onclick="toggleDescription(this)">View</button>
+          <div class="layer">
+            <h3>Intro to Machine Learning - Kaggle</h3>
+            <p>Completed the beginner-friendly course on Kaggle, learning core ML concepts like model building, data splitting, and performance evaluation using Scikit-learn.</p>
+          </div>
+        </div>
+        <div class="certification-card">
+          <img src="images/AIPython.png" alt="AI Python">
+          <button onclick="toggleDescription(this)">View</button>
+          <div class="layer">
+            <h3>AI Python for Beginners - DeepLearning.AI</h3>
+            <p>Learned Python fundamentals and AI basics to build foundational knowledge for machine learning and AI projects.</p>
+          </div>
+        </div>
+        <div class="certification-card">
+          <img src="images/AWS.png" alt="AWS Cloud">
+          <button onclick="toggleDescription(this)">View</button>
+          <div class="layer">
+            <h3>AWS Cloud Practitioner Essentials</h3>
+            <p>Completed AWS Cloud Practitioner Essentials, gaining knowledge in cloud computing fundamentals, AWS core services, and cloud security best practices.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact-container">
+    <div class="container">
+      <h1 class="sub-title contact-title">Contact Me</h1><br>
+      <div class="contact-info contact-flex">
+        <div class="contact-details">
+          <p><i class="fa-solid fa-envelope"></i> <a href="mailto:fathimamafaza2021@gmail.com">fathimamafaza2021@gmail.com</a></p>
+          <p><i class="fa-brands fa-linkedin"></i> <a href="https://www.linkedin.com/in/fathima-mafasa-754b1b301" target="_blank">LinkedIn</a></p>
+          <p><i class="fa-brands fa-github"></i> <a href="https://github.com/MafasaZ" target="_blank">GitHub</a></p>
+          <p><i class="fa-brands fa-instagram"></i> <a href="https://www.instagram.com/fathima_mafasa_" target="_blank">Instagram</a></p>
+          <p><i class="fa-brands fa-youtube"></i> <a href="https://www.youtube.com/@Fathima_Mafasa" target="_blank">YouTube</a></p>
+          <a href="cv/Resume.pdf" class="download-btn" download>Download CV</a>
+        </div>
+        <div class="contact-form">
+          <form action="https://formspree.io/f/xwpbyaea" method="POST">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" rows="6" placeholder="Your Message" required></textarea>
+            <button type="submit" class="btn btn2">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="copyright">
+    <p>© 2025  <i class="fa-solid fa-heart"></i> Designed & Developed by Fathima Mafasa.</p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
