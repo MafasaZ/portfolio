@@ -257,7 +257,7 @@ nav ul li a:hover::after {
   width: 150px;
   height: 100px;
 
-  background-size: 70%;   
+  background-size: 30%;   
   background-repeat: no-repeat;
   background-position: center;
 
