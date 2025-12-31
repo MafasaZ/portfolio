@@ -256,8 +256,11 @@ nav ul li a:hover::after {
   position: relative;
   width: 150px;
   height: 100px;
-  background-size: cover;
+
+  background-size: contain;   
+  background-repeat: no-repeat;
   background-position: center;
+
   border-radius: 15px;
   overflow: hidden;
   cursor: pointer;
