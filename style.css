@@ -223,99 +223,46 @@ nav ul li a:hover::after {
 }
 
 /*--------------projects---------*/
-/* Section Title */
-.section-title {
-  text-align: center;
-  font-size: 2.5rem;
-  color: #fff;
-  margin-bottom: 20px;
+.project-grid { 
+  display: grid; 
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); 
+  gap: 30px; margin-top: 40px;
 }
-
-/* Project Cards */
-#projects {
-  padding: 60px 10px;
-  background: #0e0e0e;
-  text-align: center;
-}
-
-.section-title {
-  font-size: 3.5rem;
-  color: #fff;
-  margin-bottom: 40px;
-}
-
-.project-grid {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 30px;           /* smaller gap for tighter layout */
-  justify-content: center;
-  align-items: flex-start;   /* keeps cards aligned at top */
-}
-
 .project-card {
-    width: 350px;       /* Increased width from 150px */
-    height: auto;        /* Changed to auto to fit content */
-    background: #1a1a1a;
-    padding: 20px;
+    height: 500px;
     border-radius: 15px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    text-align: center;
-    border: 1px solid #333;
-
-}
-.project img {
-    width: 400px;
-    height: auto; /* Makes image fill the 450px height */
-    border-radius: 10px;
-    display: block;
+    position: relative;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
     transition: transform 0.5s;
-    object-fit: cover; /*  Prevents stretching */
-
-.project-card:hover {
-  transform: scale(1.05);
 }
-
+.project-card:hover { 
+  transform: translateY(-10px); 
+}
 .card-overlay {
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(to top, rgba(255, 0, 60, 0.9), rgba(255, 0, 60, 0.3));
-  color: #fff;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 25px;
-  opacity: 0;
-  transition: opacity 0.4s ease;
-  text-align: center;
+    position: absolute; width: 100%; height: 0;
+    background: linear-gradient(rgba(0,0,0,0.1), #ff004f);
+    left: 0; bottom: 0; display: flex; flex-direction: column;
+    justify-content: center; align-items: center; text-align: center;
+    padding: 0 40px; transition: height 0.5s; overflow: hidden;
 }
-
-.project-card:hover .card-overlay {
-  opacity: 1;
-}
-
+.project-card:hover .card-overlay { height: 100%; }
 .card-overlay h3 {
-  margin-bottom: 10px;
-  font-size: 1.5rem;
+  margin-bottom: 15px; 
+  font-size: 24px; 
 }
-
-.card-overlay p {
-  font-size: 0.8rem;
-  margin-bottom: 15px;
-}
-
 .card-overlay a {
-  background: white;
-  color: #e60053;
-  padding: 12px;
-  border-radius: 50%;
-  font-size: 1.2rem;
-  text-decoration: none;
-}
-
-.card-overlay a:hover {
-  background: #eee;
-}
+  background: #fff; 
+  color: #ff004f; 
+  width: 50px; 
+  height: 50px; 
+  border-radius: 50%; 
+  display: flex; 
+  align-items: center; 
+  justify-content: center; 
+  text-decoration: none; 
+  margin-top: 20px; }
 
 /* Responsive */
 @media (max-width: 768px) {
