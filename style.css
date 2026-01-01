@@ -256,7 +256,7 @@ nav ul li a:hover::after {
   width: 150px;
   height: 100px;
 
-  background-size: 80px 180px;  /* 🔥 manually control image size */
+  background-size: 200px 150px;  /* 🔥 manually control image size */
   background-repeat: no-repeat;
   background-position: center;
 }
