@@ -255,15 +255,12 @@ nav ul li a:hover::after {
   position: relative;
   width: 300px;
   height: 200px;
-
-  background-size: contain;   /* ✅ image scales correctly */
-  background-repeat: no-repeat;
   background-position: center;
   border-radius: 15px;
 }
 .project-img {
-  width: 90px;        /* 🔥 IMAGE SIZE CONTROL */
-  height: auto;
+  width: 300px;        /* 🔥 IMAGE SIZE CONTROL */
+  height: 200px;
   margin-bottom: 15px;
 }
 
