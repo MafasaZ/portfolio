@@ -253,16 +253,23 @@ nav ul li a:hover::after {
 }
 
 .project-card {
-  width: 150px;
-  height: 100px;
+    width: 350px;       /* Increased width from 150px */
+    height: auto;        /* Changed to auto to fit content */
+    background: #1a1a1a;
+    padding: 20px;
+    border-radius: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+    border: 1px solid #333;
 
 }
 .project-img {
-  width: 90px;        /* 🔥 IMAGE SIZE CONTROL */
-  height: auto;
-  margin-bottom: 15px;
-  background-repeat: no-repeat;
-  background-position: center;
+    width: 100%;        /* Image takes full width of the card */
+    height: 200px;      /* Set a fixed height for consistency */
+    object-fit: cover;  /* Ensures image fills the area without stretching */
+    border-radius: 10px;
+    margin-bottom: 20px;
+    display: block;
 }
 
 .project-card:hover {
