@@ -225,7 +225,7 @@ nav ul li a:hover::after {
 /*--------------projects---------*/
 /* Section Title */
 .section-title {
-  text-align: center;
+  text-align: right;
   font-size: 2.5rem;
   color: #fff;
   margin-bottom: 20px;
@@ -262,7 +262,7 @@ nav ul li a:hover::after {
   transition: transform var(--transition-speed), box-shadow var(--transition-speed);
   opacity: 0;
   transform: translateY(20px);
-
+}
 
 .project-card:hover {
   transform: scale(1.05);
