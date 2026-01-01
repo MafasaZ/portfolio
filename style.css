@@ -253,20 +253,13 @@ nav ul li a:hover::after {
 }
 
 .project-card {
-  width: 280px;
-  background: #111;
-  border-radius: 20px;
-  padding: 20px;
-  text-align: center;
-  color: white;
-}
+  width: 150px;
+  height: 100px;
 
-.project-img {
-  width: 300px;        /* 🔥 IMAGE SIZE CONTROL */
-  height: auto;
-  margin-bottom: 15px;
+  background-size: 80px 60px;  /* 🔥 manually control image size */
+  background-repeat: no-repeat;
+  background-position: center;
 }
-
 
 .project-card:hover {
   transform: scale(1.05);
