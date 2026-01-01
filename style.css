@@ -253,18 +253,21 @@ nav ul li a:hover::after {
 }
 
 
-
 .project-card {
-  position: relative;
-  width: 75px;
-  height: 50px;
-  background-size: cover;
-  background-position: 70%;
-  border-radius: 15px;
-  overflow: hidden;
-  cursor: pointer;
-  transition: transform 0.3s ease;
+  width: 280px;
+  background: #111;
+  border-radius: 20px;
+  padding: 20px;
+  text-align: center;
+  color: white;
 }
+
+.project-img {
+  width: 300px;        /* 🔥 IMAGE SIZE CONTROL */
+  height: 200px;
+  margin-bottom: 15px;
+}
+
 
 .project-card:hover {
   transform: scale(1.05);
