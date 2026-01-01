@@ -252,12 +252,15 @@ nav ul li a:hover::after {
 }
 
 .project-card {
+  position: relative;
   width: 150px;
   height: 100px;
 
-  background-size: 80px 60px;  /* 🔥 manually control image size */
+  background-size: contain;   /* ✅ image scales correctly */
   background-repeat: no-repeat;
   background-position: center;
+
+  border-radius: 15px;
 }
 
 
