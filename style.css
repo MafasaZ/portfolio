@@ -259,8 +259,12 @@ nav ul li a:hover::after {
   background-size: contain;   /* ✅ image scales correctly */
   background-repeat: no-repeat;
   background-position: center;
-
   border-radius: 15px;
+}
+.project-img {
+  width: 90px;        /* 🔥 IMAGE SIZE CONTROL */
+  height: auto;
+  margin-bottom: 15px;
 }
 
 
