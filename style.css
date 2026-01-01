@@ -263,8 +263,8 @@ nav ul li a:hover::after {
 }
 
 .project-img {
-  width: 300px;        /* 🔥 IMAGE SIZE CONTROL */
-  height: 200px;
+  width: 500px;        /* 🔥 IMAGE SIZE CONTROL */
+  height: 300px;
   margin-bottom: 15px;
 }
 
