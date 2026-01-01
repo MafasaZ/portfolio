@@ -253,16 +253,15 @@ nav ul li a:hover::after {
 
 .project-card {
   position: relative;
-  width: 300px;
-  height: 200px;
+  height: 300px;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  background-size: cover;
   background-position: center;
-  border-radius: 15px;
-}
-.project-img {
-  width: 300px;        /* 🔥 IMAGE SIZE CONTROL */
-  height: 200px;
-  margin-bottom: 15px;
-}
+  transition: transform var(--transition-speed), box-shadow var(--transition-speed);
+  opacity: 0;
+  transform: translateY(20px);
 
 
 .project-card:hover {
