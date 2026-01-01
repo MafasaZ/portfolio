@@ -264,8 +264,8 @@ nav ul li a:hover::after {
 
 }
 .project-img {
-    width: 100%;        /* Image takes full width of the card */
-    height: 200px;      /* Set a fixed height for consistency */
+    width: 70%;        /* Image takes full width of the card */
+    height: 120%;      /* Set a fixed height for consistency */
     object-fit: cover;  /* Ensures image fills the area without stretching */
     border-radius: 10px;
     margin-bottom: 20px;
