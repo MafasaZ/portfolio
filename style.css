@@ -1,3 +1,4 @@
+
 * {
   margin: 0;
   padding: 0;
@@ -225,7 +226,7 @@ nav ul li a:hover::after {
 /*--------------projects---------*/
 /* Section Title */
 .section-title {
-  text-align: right;
+  text-align: center;
   font-size: 2.5rem;
   color: #fff;
   margin-bottom: 20px;
@@ -239,7 +240,7 @@ nav ul li a:hover::after {
 }
 
 .section-title {
-  font-size: 2rem;
+  font-size: 3.5rem;
   color: #fff;
   margin-bottom: 40px;
 }
@@ -247,21 +248,23 @@ nav ul li a:hover::after {
 .project-grid {
   display: flex;
   flex-wrap: wrap;
-  gap: 50px;
+  gap: 30px;           /* smaller gap for tighter layout */
   justify-content: center;
+  align-items: flex-start;   /* keeps cards aligned at top */
 }
+
+
 
 .project-card {
   position: relative;
-  height: 300px;
-  border-radius: 10px;
+  width: 75px;
+  height: 50px;
+  background-size: cover;
+  background-position: 70%;
+  border-radius: 15px;
   overflow: hidden;
   cursor: pointer;
-  background-size: cover;
-  background-position: center;
-  transition: transform var(--transition-speed), box-shadow var(--transition-speed);
-  opacity: 0;
-  transform: translateY(20px);
+  transition: transform 0.3s ease;
 }
 
 .project-card:hover {
@@ -739,5 +742,3 @@ nav ul li a:hover::after {
   width: 100%;
   gap: 16px; /* more space between fields */
 }
-
-
