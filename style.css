@@ -252,7 +252,6 @@ nav ul li a:hover::after {
   align-items: flex-start;   /* keeps cards aligned at top */
 }
 
-
 .project-card {
   width: 280px;
   background: #111;
@@ -263,8 +262,8 @@ nav ul li a:hover::after {
 }
 
 .project-img {
-  width: 500px;        /* 🔥 IMAGE SIZE CONTROL */
-  height: 300px;
+  width: 300px;        /* 🔥 IMAGE SIZE CONTROL */
+  height: auto;
   margin-bottom: 15px;
 }
 
